@@ -1,8 +1,8 @@
     document.getElementById('clear').onclick = function(){
         paper.project.activeLayer.removeChildren();
         paper.view.draw();
-        x = []
-        y = []
+        x = [0]
+        y = [0]
         const fb = firebase.database().ref()
             fb.child("x").set(x);
             fb.child('y').set(y);
